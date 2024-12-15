@@ -22,6 +22,11 @@ body {
 }
 
 .dropDown {
+    opacity: 0;
+}
+
+.dropDown.active {
+    opacity: 100;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -31,6 +36,7 @@ body {
     width: 80px;
     padding: 5px 5px 3px;
     border-radius: 5px;
+    transition: all 1s;
 }
 
 .dropDownOption {
