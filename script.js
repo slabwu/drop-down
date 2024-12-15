@@ -7,6 +7,10 @@ class DropDown {
         selector.addEventListener("click", () => {
             dropDown.hidden = false;
         })
+
+        window.addEventListener("click", (e) => {
+            if (e.target !== dropDown && e.target !== selector) dropDown.hidden = true;
+        })
     }
 }
 
