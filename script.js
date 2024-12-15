@@ -9,6 +9,7 @@ class DropDown {
         })
 
         window.addEventListener("click", (e) => {
+            if (options.includes(e.target)) console.log(e.target.textContent);
             if (e.target !== dropDown && e.target !== selector) dropDown.hidden = true;
         })
     }
